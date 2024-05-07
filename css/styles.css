@@ -1,0 +1,240 @@
+/* General styles */
+
+:root, [data-theme="dark"] {
+    --color_bg1: #10162a;
+    --color_bg2: #17213f;
+    --color_txt: #94a3b8;
+    --color_1st: #ae3333;
+    --color_2nd: #0fb62d;
+    --color_3rd: #a600ff;
+    --eon-fiber-width: 1000px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    min-height: 100vhs;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    background: var(--background-color-secondary);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.txt{
+    display: flex;
+}
+
+.rect{
+    display: flex;
+    width: var(--eon-fiber-width, 500px);
+    height: 10px;
+    background: repeating-linear-gradient(to right, #ff9500, #ff9500 9%, #000 9%, #000 10%);
+
+    /* background-color: #17213f; */
+    /* background: repeating-linear-gradient(to left, #ff9500, #ff9500 70px, #000 70px, #000 75px); */
+    /* background: repeating-linear-gradient(to right, #e66465,
+    #e66465 calc(((var(--eon-fiber-width) / 10)*1px) -10px),
+    #9198e5 calc(((var(--eon-fiber-width) / 10)*1px) -10px),
+    #9198e5 calc((var(--eon-fiber-width) / 10)*1px)); */
+}
+
+.myicons{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 600px;
+    height: 120px;
+    /* background-color: #94a3b8; */
+}
+.myicon{
+    width: 100px;
+    height: 100px;
+    background-color: #dae9ff;
+    border-radius: 25%;
+}
+#icon8{
+    background-color: #ff9292;
+    /* border-color: #00ff62; */
+    fill: #00ff62;
+}
+
+em {
+    text-decoration:underline;
+    color: #4383e4;
+}
+strong{
+    text-decoration: underline;
+}
+
+
+  
+  #theme-switch {
+    appearance: none;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    /* position: relative; */
+    /* position: absolute;
+    left: 72.5px; */
+
+    position: fixed;
+    left: 72.5px;
+    top: 30px;
+
+    width: 25px;
+    height: 25px;
+    background-image: url('icons/sun.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 25px;
+  }
+  
+  #theme-switch:checked {
+    background-image: url('icons/moon.svg');
+  }
+
+
+
+
+
+nav {
+    background-color: var(--color_bg1, #333);
+    color: var(--color_txt, #fff);
+    padding: 25.5px 0;
+}
+
+nav ul {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    gap: 4em; 
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+
+
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--color_txt, #fff);
+    text-decoration: none;
+}
+
+.both {
+    display: flex;
+    /* height: 90vh; */
+    /* height: calc(100vh - 20px); */
+
+
+}
+
+#toolbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 1em;
+    width: 150px;
+    background-color: var(--color_bg1, #333);
+}
+
+#toolbar * {
+    /* margin-bottom: 6px; */
+}
+
+#toolbar label {
+    color: var(--color_txt, #fff);
+    font-size: 12px;
+}
+
+#toolbar input {
+    /* height: 3em; */
+    border-radius: 4px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    /* width: 100%; */
+}
+#stroke {
+    width: 100%;
+    height: 40px;
+}
+
+#lineWidth {
+    width: 96%;
+}
+
+#toolbar button {
+    background-color: var(--color_3rd, #1565c0);
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    color:var(--color_bg2, #fff);
+    padding: 2px;
+}
+
+
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+
+    padding: 20px;
+}
+h1 {
+    color: var(--color_1st, crimson);
+}
+
+/* Specific styles for each page */
+.hero {
+    display: flex;
+    background-color: aqua;
+    /* Add your hero styles here */
+}
+
+.signup-login-btn {
+    background-color: chocolate;
+    /* Add styles for the sign up/login button */
+}
+
+.articles {
+    display: flex;
+    background-color: brown;
+    /* Add styles for articles and images section */
+}
+
+#map {
+    display: flex;
+    background-color: rebeccapurple;
+    /* Add styles for the map holder */
+}
