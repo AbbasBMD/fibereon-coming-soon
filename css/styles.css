@@ -1,6 +1,6 @@
 /* General styles */
 
-:root, [data-theme="dark"] {
+/* :root, [data-theme="dark"] {
     --color_bg1: #10162a;
     --color_bg2: #17213f;
     --color_txt: #94a3b8;
@@ -8,7 +8,7 @@
     --color_2nd: #0fb62d;
     --color_3rd: #a600ff;
     --eon-fiber-width: 1000px;
-}
+} */
 
 h2 {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
