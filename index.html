@@ -5,37 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FibeReon | Coming Soon</title>
   <style>
+    /* Reset CSS */
+    body, h1, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
     /* Styles for the Coming Soon Page */
     body {
       font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      color: #fff;
       background: linear-gradient(to right, #8A2BE2, #2575FC, #FF416C);
       background-size: 200% 200%;
       animation: animatedBackground 10s ease infinite;
+      overflow-x: hidden; /* Prevent horizontal scroll */
     }
     .container {
+
       text-align: center;
-      color: #fff;
-      width: 80%; /* Adjusted width */
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
     }
     .content-background {
-      background-color: rgba(0, 0, 0, 0.5); /* Dark background color with opacity */
+      margin-top: 3vh;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 20px;
     }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 30px;
+      font-size: 3vw; /* Responsive font size */
+      margin-top: 4vh;
+      margin-bottom: 3vh; /* Responsive margin */
     }
     p {
-      font-size: 1.5rem;
-      margin: 20px 0;
+      font-size: 1.6vw; /* Responsive font size */
+      margin-bottom: 2vh; /* Responsive margin */
+      margin-top: 5vh;
+      text-align: justify;
+      text-align-last: center;
+      padding-left: 3vh;
+      padding-right: 3vh;
       line-height: 1.6;
     }
     /* Styles for the Loader */
@@ -43,10 +53,11 @@
       border: 4px solid rgba(255, 255, 255, 0.3);
       border-radius: 50%;
       border-top: 4px solid #fff;
-      width: 50px;
-      height: 50px;
+      width: 3vw; /* Responsive size */
+      height: 3vw; /* Responsive size */
       animation: spin 1s linear infinite;
-      margin: 20px auto;
+      margin: 4vh auto; /* Responsive margin */
+      margin-top: 5vh;
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
@@ -63,17 +74,17 @@
       display: inline-block;
       background-color: transparent;
       border: none;
-      padding: 15px 20px; /* Adjusted padding */
-      margin-top: 0px; /* Adjusted margin */
+      padding: 1.5vh 3vw; /* Responsive padding */
+      margin-top: 3vh; /* Responsive margin */
       cursor: pointer;
-      font-size: 2rem;
+      font-size: 2vw;
       border-radius: 10px;
       transition: transform 0.2s ease;
       text-decoration: none;
-      color: #ffd700; /* Icon color */
+      color: #ffd700;
     }
     .email-button:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
     }
   </style>
 </head>
@@ -81,8 +92,8 @@
 
   <div class="container">
     <div class="content-background">
-      <h1>FibeReon</h1>
-      <p>FibeReon is an innovative solution designed to revolutionize how we manage fiber optic infrastructure.<br>With FibeReon, you can easily visualize and organize fiber optic data, including cables, boxes, splices, and more, directly on an interactive map. Our platform provides precise location tracking, ensuring accurate documentation of fiber optic networks in an enhanced efficiency and security.</p>
+      <h1>Fibereon</h1>
+      <p>Fibereon is an innovative solution designed to revolutionize how we manage fiber optic infrastructure. With Fibereon, you can easily visualize and organize fiber optic data, including cables, boxes, splices, and more, directly on an interactive map. Our platform provides precise location tracking, ensuring accurate documentation of fiber optic networks in an enhanced efficiency and security.</p>
 
       <div class="loader"></div>
       <p>FibeReon is coming soon, stay tuned!</p>
