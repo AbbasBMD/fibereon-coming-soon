@@ -3,14 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>FibeReon</title>
+  <title>FibeReon | Coming Soon</title>
+  <style>
+    /* Styles for the Coming Soon Page */
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(to right, #8A2BE2, #2575FC, #FF416C);
+      background-size: 200% 200%;
+      animation: animatedBackground 10s ease infinite;
+    }
+    .container {
+      text-align: center;
+      color: #fff;
+      width: 80%; /* Adjusted width */
+    }
+    .content-background {
+      background-color: rgba(0, 0, 0, 0.5); /* Dark background color with opacity */
+      padding: 20px;
+      border-radius: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+    /* Styles for the Loader */
+    .loader {
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 4px solid #fff;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Animated Gradient Background */
+    @keyframes animatedBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    /* Button Styles */
+    .email-button {
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      padding: 15px 20px; /* Adjusted padding */
+      margin-top: 0px; /* Adjusted margin */
+      cursor: pointer;
+      font-size: 2rem;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: #ffd700; /* Icon color */
+    }
+    .email-button:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-  <div class="box">
-      <div class="lightbar"></div>
-      <div class="toplayer"></div>
-      <h2>FibeReon</h2>
+
+  <div class="container">
+    <div class="content-background">
+      <h1>FibeReon</h1>
+      <p>FibeReon is an innovative solution designed to revolutionize how we manage fiber optic infrastructure.<br>With FibeReon, you can easily visualize and organize fiber optic data, including cables, boxes, splices, and more, directly on an interactive map. Our platform provides precise location tracking, ensuring accurate documentation of fiber optic networks in an enhanced efficiency and security.</p>
+
+      <div class="loader"></div>
+      <p>FibeReon is coming soon, stay tuned!</p>
+      <a href="mailto:info@fibereon.com" class="email-button">✉️</a>
+    </div>
   </div>
+
 </body>
 </html>
